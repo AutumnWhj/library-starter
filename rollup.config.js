@@ -2,7 +2,7 @@ import typescript from '@rollup/plugin-typescript';  // 让 rollup 认识 ts 的
 import pkg from './package.json';
 
 // 为了将引入的 npm 包，也打包进最终结果中
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 // import babel from 'rollup-plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
