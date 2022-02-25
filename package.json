@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/bundle.cjs.js",
+  "module": "lib/bundle.esm.js",
   "scripts": {
     "build": "rimraf lib/* && rollup -c",
     "watch": "rimraf lib/* && rollup -c -w",
