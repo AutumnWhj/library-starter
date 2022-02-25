@@ -1,2 +1,3 @@
-const a = 12121
-export default a
+import sum from './sum'
+
+console.log(sum(1, 2))
