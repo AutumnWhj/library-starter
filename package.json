@@ -2,10 +2,17 @@
   "name": "library-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/bundle.cjs.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rimraf lib/* && rollup -c",
+    "watch": "rimraf lib/* && rollup -c -w"
   },
   "author": "Autumn",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.68.0",
+    "typescript": "^4.5.5"
+  }
 }
